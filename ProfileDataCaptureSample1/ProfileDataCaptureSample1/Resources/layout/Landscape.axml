@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+    <CheckBox
+        android:id="@+id/checkBoxEAN8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/EAN8_string" />
+    <CheckBox
+        android:id="@+id/checkBoxEAN13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxEAN8"
+        android:layout_alignLeft="@+id/checkBoxEAN8"
+        android:layout_toRightOf="@+id/checkBoxCode39"
+        android:layout_marginTop="20dp"
+        android:text="@string/EAN13_string" />
+    <CheckBox
+        android:id="@+id/checkBoxUPCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:checked="true"
+        android:paddingRight="15dp"
+        android:text="@string/UPCE_string" />
+    <CheckBox
+        android:id="@+id/checkBoxUPCE0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxUPCE"
+        android:layout_alignLeft="@+id/checkBoxUPCE"
+        android:layout_marginTop="20dp"
+        android:text="@string/UPCE0_string" />
+    <CheckBox
+        android:id="@+id/checkBoxCode128"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:checked="true"
+        android:enabled="true"
+        android:text="@string/code128_string" />
+    <CheckBox
+        android:id="@+id/checkBoxCode39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxCode128"
+        android:layout_alignLeft="@+id/checkBoxCode128"
+        android:layout_marginTop="20dp"
+        android:text="@string/code39_string" />
+    <LinearLayout
+        android:id="@+id/LinearViewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxCode39"
+        android:background="@drawable/customtext"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/checkBoxEAN13">
+        <TextView
+            android:id="@+id/textViewStatusTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/statusTitle_string" />
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewStatusTitle"
+            android:paddingTop="10dp"
+            android:text="@string/statustext_string" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_set_string"
+        android:layout_below="@+id/LinearViewStatus"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>
