@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="emdk-component">
+  <name>EMDK For Xamarin</name>
+  <publisher>Zebra</publisher>
+  <publisher-url>http://www.zebra.com</publisher-url>
+  <docs-url>http://emdk.github.io/xamarin-docs/2.0/</docs-url>
+  <version>2.1.0.4</version>
+  <summary>The EMDK for Xamarin gives developers a set of tools to create powerful line of business applications for Zebra Android devices using C-Sharp.</summary>
+  <samples>
+    <sample id="BarcodeSample1">
+      <name>Barcode APIs</name>
+      <summary>Barcode APIs</summary>
+    </sample>
+  </samples>
+</component>
