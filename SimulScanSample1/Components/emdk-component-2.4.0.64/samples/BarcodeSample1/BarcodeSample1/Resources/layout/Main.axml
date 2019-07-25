@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1">
+    <TableLayout
+        p1:layout_width="379.5dp"
+        p1:layout_height="73.6dp"
+        p1:id="@+id/tableLayout1">
+        <TableRow
+            p1:id="@+id/tableRow1">
+            <TextView
+                p1:text="Select Scanner:"
+                p1:layout_column="0"
+                p1:id="@+id/textViewlblScanner" />
+            <Spinner
+                p1:layout_column="2"
+                p1:id="@+id/spinnerScanners" />
+        </TableRow>
+        <TableRow
+            p1:id="@+id/tableRow3">
+            <TextView
+                p1:text="Select Trigger:"
+                p1:layout_column="0"
+                p1:id="@+id/textViewlblTrigger" />
+            <Spinner
+                p1:layout_column="2"
+                p1:id="@+id/spinnerTriggers" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        p1:text="Set Decoders:"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/tableLayout1"
+        p1:id="@+id/textView6" />
+    <TableLayout
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/textView6"
+        p1:id="@+id/tableLayout2">
+        <TableRow
+            p1:id="@+id/tableRow4">
+            <CheckBox
+                p1:text="EAN8"
+                p1:layout_column="0"
+                p1:id="@+id/checkBoxEAN8"
+                p1:checked="true" />
+            <CheckBox
+                p1:text="EAN13"
+                p1:layout_column="1"
+                p1:id="@+id/checkBoxEAN13"
+                p1:checked="true" />
+        </TableRow>
+        <TableRow
+            p1:id="@+id/tableRow5">
+            <CheckBox
+                p1:text="Code39"
+                p1:layout_column="0"
+                p1:id="@+id/checkBoxCode39"
+                p1:checked="true" />
+            <CheckBox
+                p1:text="Code128"
+                p1:layout_column="1"
+                p1:id="@+id/checkBoxCode128"
+                p1:checked="true" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        p1:text="Scan:"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/tableLayout2"
+        p1:id="@+id/textView16" />
+    <TableLayout
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/textView16"
+        p1:id="@+id/tableLayout3">
+        <TableRow
+            p1:id="@+id/tableRow7">
+            <CheckBox
+                p1:text="Continuous"
+                p1:layout_column="0"
+                p1:id="@+id/checkBoxContinuous" />
+            <Button
+                p1:text="Start"
+                p1:layout_column="1"
+                p1:id="@+id/buttonStartScan" />
+            <Button
+                p1:text="Stop"
+                p1:layout_column="2"
+                p1:id="@+id/buttonStopScan" />
+        </TableRow>
+        <TableRow
+            p1:id="@+id/tableRow9">
+        </TableRow>
+    </TableLayout>
+    <TextView
+        p1:text="Status:"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/tableLayout3"
+        p1:id="@+id/textViewStatus" />
+    <TextView
+        p1:text="Data:"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/textViewStatus"
+        p1:id="@+id/textView26" />
+    <ScrollView
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:layout_below="@id/textView26"
+        p1:id="@+id/scrollView1">
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/linearLayout1">
+            <TextView
+                p1:text=""
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textViewData" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

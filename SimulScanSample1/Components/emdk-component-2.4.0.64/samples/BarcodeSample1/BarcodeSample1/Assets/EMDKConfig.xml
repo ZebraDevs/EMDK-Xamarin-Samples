@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><!--This is an auto generated document. Changes to this document may cause incorrect behavior.--><wap-provisioningdoc>
+<characteristic type="ProfileInfo">
+<parm name="created_wizard_version" value="6.3.0"/>
+</characteristic>
+<characteristic type="Profile">
+<parm name="ProfileName" value="dfg"/>
+<parm name="ModifiedDate" value="2017-03-10 16:22:54"/>
+<parm name="TargetSystemVersion" value="6.2"/>
+<characteristic type="UiMgr" version="6.1">
+<parm name="emdk_name" value="treh"/>
+<parm name="HomeKeyUsage" value="2"/>
+<parm name="NotificationPullDown" value="2"/>
+</characteristic>
+</characteristic>
+</wap-provisioningdoc>
