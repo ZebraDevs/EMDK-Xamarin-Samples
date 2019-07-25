@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Symbol.XamarinEMDK.ProfilePowerMgrSample1" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="19" />
+	<uses-permission android:name="com.symbol.emdk.permission.EMDK" />
+	<application android:label="ProfilePowerMgrSample1" android:icon="@drawable/Icon" android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+		<uses-library android:name="com.symbol.emdk" />
+	</application>
+</manifest>
