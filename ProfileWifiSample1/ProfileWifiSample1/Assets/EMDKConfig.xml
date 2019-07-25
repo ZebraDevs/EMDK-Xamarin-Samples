@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is an auto generated document. Changes to this document may cause incorrect behavior.-->
+<wap-provisioningdoc>
+  <characteristic type="ProfileInfo">
+    <parm name="created_wizard_version" value="3.1.20"/>
+  </characteristic>
+  <characteristic type="Profile">
+    <parm name="ProfileName" value="WifiProfile-1"/>
+    <parm name="ModifiedDate" value="2015-09-11 00:15:02"/>
+    <parm name="TargetSystemVersion" value="4.4"/>
+    <characteristic type="Wi-Fi" version="4.1">
+      <parm name="emdk_name" value="WifiMgr1"/>
+      <parm name="UseRegulatory" value="0"/>
+      <parm name="UseAdvancedOptions" value="0"/>
+    </characteristic>
+  </characteristic>
+</wap-provisioningdoc>
