@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/WriteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:focusable="true"
+            android:text="Write" />
+        <Button
+            android:id="@+id/ReadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:focusable="true"
+            android:text="Read" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/editBoxTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write Data:" />
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none" />
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+</LinearLayout>
