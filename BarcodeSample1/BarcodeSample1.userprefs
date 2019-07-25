@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="BarcodeSample1\BarcodeSample1.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BarcodeSample1" expanded="True">
+            <Node name="BarcodeSample1" expanded="True">
+              <Node name="ComponentReferenceFolder" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BarcodeSample1 PreferredExecutionTarget="Android.test" />
+</Properties>
