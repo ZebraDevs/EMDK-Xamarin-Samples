@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Symbol.XamarinEMDK.SAMSample1" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="25" />
+	<uses-permission android:name="com.symbol.emdk.permission.EMDK" />
+	<uses-permission android:name="android.permission.NFC" />
+	<application android:label="SAMSample1">
+		<uses-library android:name="com.symbol.emdk" />
+	</application>
+</manifest>
