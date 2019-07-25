@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <ManifestDocuments />
+  <NativeLibraries />
+  <Jars>
+    <Jar>obj\Debug\__library_projects__\Symbol.XamarinEMDK\library_project_imports\com.symbol.emdk.jar</Jar>
+  </Jars>
+</Paths>

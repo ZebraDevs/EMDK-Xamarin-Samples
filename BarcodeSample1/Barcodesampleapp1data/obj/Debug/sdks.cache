@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sdk>
+  <AndroidApiLevel>19</AndroidApiLevel>
+  <AndroidApiLevelName>19</AndroidApiLevelName>
+  <AndroidNdkPath>C:\Android_SetUp\android-ndk-r10e</AndroidNdkPath>
+  <AndroidSdkBuildToolsPath>C:\Users\VNQ837\AppData\Local\Android\android-sdk\build-tools\25.0.0</AndroidSdkBuildToolsPath>
+  <AndroidSdkBuildToolsBinPath>C:\Users\VNQ837\AppData\Local\Android\android-sdk\build-tools\25.0.0</AndroidSdkBuildToolsBinPath>
+  <AndroidSdkPath>C:\Users\VNQ837\AppData\Local\Android\android-sdk</AndroidSdkPath>
+  <JavaSdkPath>C:\Program Files\Java\jdk1.8.0_60</JavaSdkPath>
+  <MonoAndroidBinPath>C:\Program Files (x86)\MSBuild\Xamarin\Android</MonoAndroidBinPath>
+  <MonoAndroidToolsPath>C:\Program Files (x86)\MSBuild\Xamarin\Android</MonoAndroidToolsPath>
+  <ReferenceAssemblyPaths>
+    <ReferenceAssemblyPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\</ReferenceAssemblyPath>
+  </ReferenceAssemblyPaths>
+  <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  <ZipAlignPath>C:\Users\VNQ837\AppData\Local\Android\android-sdk\build-tools\25.0.0</ZipAlignPath>
+  <MonoAndroidIncludePath />
+  <SupportedApiLevel>19</SupportedApiLevel>
+  <AndroidSequencePointsMode>None</AndroidSequencePointsMode>
+</Sdk>
