@@ -1,1 +1,0 @@
-<resources><string name="ApplicationName">BarcodeSample1</string><string name="scanner_prompt">Choose the scanner</string><string name="trigger_prompt">Choose the trigger type</string><string-array name="triggers_array"><item>HARD</item><item>SOFT</item></string-array></resources>

@@ -1,6 +1,9 @@
-﻿using System;
+﻿/*
+ * Copyright (C) 2015-2019 Zebra Technologies Corporation and/or its affiliates
+ * All rights reserved.
+ */
+using System;
 using System.Xml;
-
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -8,7 +11,6 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Util;
-
 using Symbol.XamarinEMDK;
 using System.IO;
 

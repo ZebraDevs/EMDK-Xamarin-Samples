@@ -146,7 +146,7 @@ namespace Symbol.XamarinEMDK.SAMSample1
             StringBuffer sb = new StringBuffer();
             foreach (byte b in buf)
             {
-                sb.Append(Java.Lang.String.Format("0x%02x", b));
+                sb.Append(Java.Lang.String.Format("0x%02x", (Java.Lang.Byte)(sbyte)b));
             }
             return sb.ToString();
         }

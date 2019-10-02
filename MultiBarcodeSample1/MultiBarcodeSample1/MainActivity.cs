@@ -1,4 +1,8 @@
-﻿using Android.App;
+﻿/*
+ * Copyright (C) 2018-2019 Zebra Technologies Corporation and/or its affiliates
+ * All rights reserved.
+ */
+using Android.App;
 using Android.Widget;
 using Android.OS;
 using System;
@@ -24,13 +28,6 @@ namespace MultiBarcodeSample1
         private Spinner spinnerScannerDevices = null;
         private Spinner spinnerTriggers = null;
         private EditText barcodeCount = null;
-        private TextView textView1 = null;
-        private TextView textView4 = null;
-        private TextView textView2 = null;
-        private TextView textView = null;
-        private TextView textViewType = null;
-        private TableLayout tableView = null;
-        private ScrollView scrollView = null;
         private string statusString = "";
         private int scannerIndex = 0;
         private int defaultIndex = 0;
@@ -268,9 +265,6 @@ namespace MultiBarcodeSample1
 
                 // Set default scanner
                 spinnerScannerDevices.SetSelection(defaultIndex);
-
-                // Set trigger (App default - HARD)
-                spinnerTriggers.SetSelection(triggerIndex);
                 
             }
             catch (System.Exception e)
@@ -514,7 +508,7 @@ namespace MultiBarcodeSample1
             protected override void OnPostExecute(string result)
             {
 
-                TextView tv = present_Activity.FindViewById<TextView>(Resource.Id.textViewStatus);
+                TextView tv = present_Activity.FindViewById<TextView>(Resource.Id.textViewType);
                 tv.Text= result;
 
                 TableLayout tl = (TableLayout)present_Activity.FindViewById(Resource.Id.tableView);
@@ -543,10 +537,11 @@ namespace MultiBarcodeSample1
             }
             protected override void OnPostExecute(string result)
             {
-                
 
-                TextView tv = present_Activity.FindViewById<TextView>(Resource.Id.textViewStatus);
-                tv.Text = result;
+     
+                    TextView tv = present_Activity.FindViewById<TextView>(Resource.Id.textViewStatus);
+                    tv.Text = "Status: " + result;
+                
                
             }
 
@@ -671,7 +666,6 @@ namespace MultiBarcodeSample1
 
                         rows.Add(row);
                         //RunOnUiThread(() => DisplayScanData(mValue));
-                        RunOnUiThread(() => DisplayScanData(dataString));
                     }
                     new AsyncMultiDataUpdate(rows).Execute("MultiBarcode Scanning result");
 
@@ -682,19 +676,6 @@ namespace MultiBarcodeSample1
             }
 
 
-
-        }
-        private void DisplayScanData(string data)
-        {
-
-            if (dataCount++ > 100)
-            {
-                // Clear the cache after 100 scans
-                textViewStatus.Text = "";
-                dataCount = 0;
-            }
-
-           // textViewStatus.Append(data + "\r\n");
 
         }
 

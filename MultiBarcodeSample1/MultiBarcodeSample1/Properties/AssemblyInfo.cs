@@ -9,9 +9,9 @@ using Android.App;
 [assembly: AssemblyTitle("MultiBarcodeSample1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Zebra Technologies")]
+[assembly: AssemblyCompany("Zebra Technologies Corporation")]
 [assembly: AssemblyProduct("MultiBarcodeSample1")]
-[assembly: AssemblyCopyright("Copyright © Zebra Technologies 2018")]
+[assembly: AssemblyCopyright("Copyright © 2018-2019 Zebra Technologies Corporation and/or its affiliates. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
@@ -26,5 +26,5 @@ using Android.App;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("4.1.0.0")]
+[assembly: AssemblyFileVersion("4.1.0.0")]

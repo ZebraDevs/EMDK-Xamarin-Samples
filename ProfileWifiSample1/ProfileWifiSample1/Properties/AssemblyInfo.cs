@@ -9,9 +9,9 @@ using Android.App;
 [assembly: AssemblyTitle("ProfileWifiSample1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Symbol Technologies LLC")]
+[assembly: AssemblyCompany("Zebra Technologies Corporation")]
 [assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("Copyright © 2015 Symbol Technologies LLC. All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright (C) 2015-2019 Zebra Technologies Corporation and/or its affiliates. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
@@ -26,5 +26,5 @@ using Android.App;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.1")]
-[assembly: AssemblyFileVersion("1.0.0.1")]
+[assembly: AssemblyVersion("4.0.0.0")]
+[assembly: AssemblyFileVersion("4.0.0.0")]

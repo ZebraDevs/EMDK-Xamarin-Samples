@@ -9,8 +9,8 @@ using Android.App;
 [assembly: AssemblyTitle("SAMSample1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Zebra Technologies")]
-[assembly: AssemblyProduct("SAMSample1")]
+[assembly: AssemblyCompany("Zebra Technologies Corporation")]
+[assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("Copyright (C) 2019 Zebra Technologies Corporation and/or its affiliates. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -26,5 +26,5 @@ using Android.App;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("4.0.0.0")]
+[assembly: AssemblyFileVersion("4.0.0.0")]

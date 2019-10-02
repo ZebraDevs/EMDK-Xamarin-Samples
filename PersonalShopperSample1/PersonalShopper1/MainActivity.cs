@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * Copyright (C) 2016-2019 Zebra Technologies Corporation and/or its affiliates
+ * All rights reserved.
+ */
+using System;
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -12,7 +16,7 @@ using PersonalShopperSample1;
 
 namespace EMDKXamarinPersonalShopper
 {
-    [Activity(Label = "EMDKXamarinPersonalShopper", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "PersonalShopperSample1", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class MainActivity : Activity, EMDKManager.IEMDKListener
     {
         private EMDKManager emdkManager = null;
@@ -168,7 +172,7 @@ namespace EMDKXamarinPersonalShopper
             toast.Show();
         }
 
-        protected void OnDestroy()
+        protected override void OnDestroy()
         {
             base.OnDestroy();
             disable();
@@ -327,9 +331,12 @@ namespace EMDKXamarinPersonalShopper
         {
             try
             {
-                if (null != PsObject.Cradle)
+                if (PsObject != null)
                 {
-                    PsObject.Cradle.Disable();
+                    if (null != PsObject.Cradle)
+                    {
+                        PsObject.Cradle.Disable();
+                    }
                 }
             }
             catch (CradleException e)
@@ -374,8 +381,8 @@ namespace EMDKXamarinPersonalShopper
 
             if (PsObject == null)
             {
-                textViewStatus.Text = string.Empty;
-                textViewStatus.SetText("Status: " + "PersonalShopper NOT Feature supported", TextView.BufferType.Normal);
+                Toast.MakeText(this, "PersonalShopper feature is NOT supported", ToastLength.Short).Show();
+                Finish();
             }
             else
             {

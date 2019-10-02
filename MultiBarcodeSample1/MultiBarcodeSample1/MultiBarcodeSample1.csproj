@@ -16,8 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -51,8 +50,8 @@
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Symbol.XamarinEMDK, Version=4.0.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Symbol.XamarinEMDK.4.0.0.3\lib\MonoAndroid\Symbol.XamarinEMDK.dll</HintPath>
+    <Reference Include="Symbol.XamarinEMDK, Version=3.0.0.90, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Symbol.XamarinEMDK.3.0.0.90\lib\MonoAndroid\Symbol.XamarinEMDK.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

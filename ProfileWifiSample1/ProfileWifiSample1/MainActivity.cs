@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * Copyright (C) 2015-2019 Zebra Technologies Corporation and/or its affiliates
+ * All rights reserved.
+ */
+using System;
 using System.Xml;
 using System.IO;
 
