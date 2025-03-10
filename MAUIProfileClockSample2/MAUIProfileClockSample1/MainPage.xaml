@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProfileClockSample1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="10,0"
+            Margin="10">
+
+            <Label
+                Text="TimeZone (Olson format or GMT+/-HH:MM):"
+                FontSize="14" 
+                FontAttributes="Bold"
+                HorizontalOptions="Start" />
+
+            <Entry x:Name="txtTimeZone" 
+                   Text="GMT+05:45"
+                   FontSize="14"
+                   Placeholder="Enter TimeZone (Olson format or GMT+/-HH:MM)"/>
+
+            <Label
+                Text="Date (YYYY-MM-DD):"
+                FontSize="14"
+                FontAttributes="Bold"
+                HorizontalOptions="Start" />
+
+            <Entry x:Name="txtDate" 
+                   Text="2022-03-10"
+                   FontSize="14"
+                   Placeholder="Enter Date (YYYY-MM-DD)"/>
+
+            <Label
+                Text="Time (HH:MM:SS):"
+                FontSize="14"
+                FontAttributes="Bold"
+                HorizontalOptions="Start" />
+
+            <Entry x:Name="txtTime" 
+                   Text="13:19:44"
+                   FontSize="14"
+                   Placeholder="Enter Time (HH:MM:SS)"/>
+
+            <Button
+                x:Name="btnSetClock"
+                Text="Set Clock"
+                HeightRequest="50"
+                FontSize="14"
+                Clicked="onSetClockClicked"
+                HorizontalOptions="FillAndExpand" />
+
+            <Label
+                x:Name="lblStatus"
+                Text="Status: "
+                FontSize="14"
+                HorizontalOptions="Start" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
