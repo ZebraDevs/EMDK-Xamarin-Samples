@@ -97,6 +97,8 @@ public class MainActivity : MauiAppCompatActivity, EMDKManager.IEMDKListener
                      "<parm name=\"TimeZone\" value=\"" + timeZone + "\"/>" +
                      "<parm name=\"Date\" value=\"" + date + "\"/>" +
                      "<parm name=\"Time\" value=\"" + time + "\"/>" +
+                     "<parm name=\"AutoTimeZone\" value=\"false\"/>" +
+                     "<parm name=\"AutoTime\" value=\"false\"/>" +
                      "</characteristic>" +
                      "</characteristic>";
 

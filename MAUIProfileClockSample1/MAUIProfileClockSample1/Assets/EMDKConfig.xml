@@ -13,6 +13,8 @@
 			<parm name="TimeZone" value="GMT+05:30"/>
 			<parm name="Date" value="2014-06-17"/>
 			<parm name="Time" value="12:16:23"/>
+			<parm name="AutoTimeZone" value="false"/>
+			<parm name="AutoTime" value="false"/>
 		</characteristic>
 	</characteristic>
 </wap-provisioningdoc>
