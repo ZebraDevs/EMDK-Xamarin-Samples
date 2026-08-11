@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIProfileWifiSampl1.MainPage"
+             Title="EMDK Wi-Fi Profile">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="18">
+
+            <Label Text="Wi-Fi:" FontAttributes="Bold" />
+
+            <HorizontalStackLayout Spacing="24">
+                <RadioButton x:Name="WifiEnableRadio"
+                             Content="Enable"
+                             GroupName="WifiState"
+                             IsChecked="True" />
+                <RadioButton x:Name="WifiDisableRadio"
+                             Content="Disable"
+                             GroupName="WifiState" />
+            </HorizontalStackLayout>
+
+            <Label Text="SSID:" FontAttributes="Bold" />
+            <Entry x:Name="SsidEntry"
+                   Placeholder="Enter network SSID"
+                   ClearButtonVisibility="WhileEditing" />
+
+            <Label Text="Network Action:" FontAttributes="Bold" />
+            <Picker x:Name="ActionPicker" SelectedIndex="0">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Do Nothing</x:String>
+                        <x:String>Add (Default Open Network)</x:String>
+                        <x:String>Remove</x:String>
+                        <x:String>Connect</x:String>
+                        <x:String>Disconnect</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button x:Name="ApplyBtn"
+                    Text="Apply"
+                    Clicked="OnApplyClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="160" />
+
+            <Label Text="Status:" FontAttributes="Bold" />
+            <Label x:Name="StatusLabel" Text="" LineBreakMode="WordWrap" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
