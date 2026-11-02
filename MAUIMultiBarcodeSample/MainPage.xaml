@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:services="clr-namespace:MAUIMultiBarcodeSample1.Services"
+             x:Class="MAUIMultiBarcodeSample1.MainPage"
+             Title="Multi Barcode Sample">
+
+    <Grid Padding="16" RowSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Text="Select Scanner:" VerticalOptions="Center" />
+        <Picker Grid.Row="0" Grid.Column="1" x:Name="ScannerPicker"
+                SelectedIndexChanged="OnScannerSelected" />
+
+        <Label Grid.Row="1" Grid.Column="0" Text="Select Trigger Type:" VerticalOptions="Center" />
+        <Picker Grid.Row="1" Grid.Column="1" x:Name="TriggerPicker"
+                SelectedIndexChanged="OnTriggerSelected" />
+
+        <Label Grid.Row="2" Grid.Column="0" Text="Barcode Count (2-10)" VerticalOptions="Center" />
+        <Entry Grid.Row="2" Grid.Column="1" x:Name="BarcodeCountEntry"
+               Keyboard="Numeric" Text="5" TextChanged="OnBarcodeCountChanged" />
+
+        <HorizontalStackLayout Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Spacing="16">
+            <Button x:Name="ScanButton" Text="Scan" Clicked="OnScanClicked" />
+            <Label Text="Scan a label with multiple barcodes" VerticalOptions="Center" />
+        </HorizontalStackLayout>
+
+        <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+               x:Name="StatusLabel" Text="Scanner status:" Margin="0,8,0,0" />
+
+        <Label Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+               Text="Data:" FontAttributes="Bold" Margin="0,8,0,0" />
+
+        <!-- Header row -->
+        <Grid Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" ColumnSpacing="1" BackgroundColor="Black" Padding="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="Type" Padding="5" BackgroundColor="White" TextColor="Black" />
+            <Label Grid.Column="1" Text="Value" Padding="5" BackgroundColor="White" TextColor="Black" />
+        </Grid>
+
+        <CollectionView Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"
+                        x:Name="ResultsView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="services:ScannedBarcode">
+                    <Grid ColumnSpacing="1" BackgroundColor="Black" Padding="1" Margin="0,1,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="{Binding Type}" Padding="5" BackgroundColor="White" TextColor="Black" />
+                        <Label Grid.Column="1" Text="{Binding Value}" Padding="5" BackgroundColor="White" TextColor="Black" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>

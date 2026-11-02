@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIScanAndPairSample1.MainPage"
+             Title="Scan And Pair Sample">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="10">
+
+            <Label Text="Bluetooth Name:" />
+            <Entry x:Name="NameEntry" Placeholder="MPOS-64001019" IsEnabled="False" />
+
+            <Label Text="Bluetooth Address:" />
+            <Entry x:Name="AddressEntry" Placeholder="8C:DE:52:12:A2:56" IsEnabled="False" />
+
+            <Grid ColumnDefinitions="Auto,*,Auto,*" ColumnSpacing="8">
+                <CheckBox x:Name="AlwaysScanCheck" Grid.Column="0" IsChecked="True"
+                          CheckedChanged="OnAlwaysScanChanged" VerticalOptions="Center" />
+                <Label Grid.Column="1" Text="Always Scan" VerticalOptions="Center" />
+
+                <CheckBox x:Name="HardTriggerCheck" Grid.Column="2" IsChecked="True"
+                          VerticalOptions="Center" />
+                <Label Grid.Column="3" Text="Hard Trigger" VerticalOptions="Center" />
+            </Grid>
+
+            <Label Text="ScanData Type:" />
+            <Picker x:Name="ScanDataTypePicker" />
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12" Margin="0,10,0,0">
+                <Button Grid.Column="0" x:Name="PairButton" Text="Pair" Clicked="OnPairClicked" />
+                <Button Grid.Column="1" x:Name="UnpairButton" Text="Unpair" Clicked="OnUnpairClicked" />
+            </Grid>
+
+            <Label Text="Status:" FontAttributes="Bold" Margin="0,16,0,0" />
+            <Label x:Name="StatusLabel" Text="" LineBreakMode="WordWrap" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

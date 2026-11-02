@@ -43,7 +43,12 @@ public sealed class WifiProfileService : Java.Lang.Object, IWifiProfileService, 
         EMDKResults results = EMDKManager.GetEMDKManager(Application.Context, this);
 
         if (results.StatusCode != EMDKResults.STATUS_CODE.Success)
-            _initTcs.TrySetResult("EMDKManager object creation failed ...");
+        {
+            // Include the status codes so failures can be diagnosed from the screen / logcat.
+            string reason = $"status={results.StatusCode}, ext={results.ExtendedStatusCode}";
+            global::Android.Util.Log.Error(nameof(WifiProfileService), "GetEMDKManager failed: " + reason);
+            _initTcs.TrySetResult($"EMDKManager object creation failed ({reason})");
+        }
 
         return _initTcs.Task;
     }
